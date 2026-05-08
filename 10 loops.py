@@ -1,6 +1,6 @@
 #Loops
 #for,while,range,break,continue,pass
-#for loop
+#for loop - sequence iterations
 '''
 a=[10,20,30,40,50]
 for in a:
@@ -79,4 +79,46 @@ a=['codegnan','python','course']
 b=str(a)
 c=b.upper()
 print(c)
+'''
+#while loop
+#continuous loop
+'''
+a=10
+while a<1:
+    print('true')
+a=20
+while a>1:
+    print(a)
+
+a=20
+while a>1:
+    print(a)
+    a-=1
+
+a=20
+while a>=1:
+    a-=1
+    print(a)
+a=30
+while a>1:
+    a-=1
+    print(a)
+
+a=20
+while a>4:
+    a-=1
+print(a)
+a=10
+while a>1:
+    print(a)
+    a+=1
+a=1
+while a<10:
+    print(a)
+    a+=1
+
+a=10
+while a>1:
+    print(a)
+    a-=1
 '''

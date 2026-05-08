@@ -279,18 +279,23 @@ while True:
 '''
 '''
 #Vowels and consonent
-str = input("entre a letter").lower()
-if str in 'aeiou':
-    print('it is a vowel')
-else:
-    print('it is a consonant')
+while True:
+    str = input("entre a letter").lower()
+    if str in 'aeiou':
+        print('it is a vowel')
+    else:
+        print('it is a consonant')
+'''
+'''
 # guest code
-name =input("entre your name")
-if name == 'loki':
-    print (f'welcome {name}')
-else:
-    print('welcome guest')
-
+while True:
+    name =input("entre your name")
+    if name == 'loki':
+        print (f'welcome {name}')
+    else:
+        print('welcome guest')
+'''
+'''
 #guest code for multiple guests
 name = input("entre your name").lower()
 names_of_family = ['loki','siddi','chinnu','junnu','bunnu','raju']
@@ -299,12 +304,13 @@ if name in names_of_family:
 else:
     print('welcome guest')
 '''
-'''
-#social media login -username -password
 
+#social media login -username -password
+'''
 if username and password matched "login successful"
 if not matched "invalid credentials"
-
+'''
+'''
 user='loki'
 password='P1234'
 verify_user=input('entre username ')
@@ -316,4 +322,47 @@ if(user == verify_user):
         print('invalid password')
 else:
     print('invalid username')
+'''
+#using if elif else
+'''
+user='loki'
+password='P1234'
+verify_user=input('entre username ')
+verify_pass=input('entre password ')
+if user == verify_user and password == verify_pass :
+    print('login successful')
+elif user == verify_user :
+    print('invalid username')
+else :
+    print('invalid password')
+'''
+#bakery cake problem
+'''
+budget = int(input("enter your amount: "))
+if budget == 1200:
+    print('Red velvet cake')
+elif budget == 1000:
+    print('Chocolate cake')
+elif budget == 800:
+    print('Almond cake')
+elif budget == 600:
+    print('Butterscotch cake')
+elif budget == 400:
+    print('normal cake')
+else:
+    print('sorry cake is not available')
+'''
+#Pizza problem pizza name ->print price
+'''
+order=input('order details ')
+if order == ('BBQ Pizza'):
+    print(1000)
+elif order == ('Crispy Chicken Pizza'):
+    print(800)
+elif order == ('Paneer Pizza'):
+    print(600)
+elif order == ('Corn Pizza'):
+    print(400)
+elif order == ('French Fries and Coke'):
+    print(200)
 '''
