@@ -1,0 +1,10 @@
+x=10;y=10
+print(id(x))
+print(id(y))
+x=[1,2,3,4,5]
+y=[1,2,3,4,5]
+print(id(x))
+print(id(y))
+x.append(20)
+print(id(x))
+print(id(y))
