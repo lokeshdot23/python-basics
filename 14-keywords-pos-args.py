@@ -127,7 +127,7 @@ ask each students present or not
 4-p
 5-a
 print report of present and absent
-"""
+
 n=int(input("entre no od students"))
 p=a=0
 for i in range(n):
@@ -140,3 +140,5 @@ for i in range(n):
 print("report")
 print("present:",p)
 print("absent:",a)
+print("total students",n)
+"""
