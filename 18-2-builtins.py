@@ -52,7 +52,7 @@ for i in a:
     if i%2==0:
         print(i)
 
-b=list(filter(lambda a:a%2==0,a))
+b=list(filter(lambda i:i%2==0,a))
 print(b)
 '''
 #[],{},(),set()
@@ -71,7 +71,7 @@ print(b)
 '''
 #print(eval(input()))
 #map()
-#map-->each object from collection and forma a new collection
+#map-->each object from collection and form a new collection
 '''
 a=[3,4,5,6,8,9,10,11]
 b=[1,2,4,7,9,10,11,12]

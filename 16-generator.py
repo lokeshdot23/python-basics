@@ -1,6 +1,6 @@
 #generator
 #a=[expr for var in collection/range]
-'''
+
 a=[i for i in range(21)]
 print(a)
 
@@ -17,7 +17,7 @@ print(set(a))
 print(type(a))
 
 a=(i for i in range(21))
-print(tuple(a))
+print(type(tuple(a)))
 print(type(a))
 
 a={i:i*i for i in range(21)}
@@ -41,8 +41,7 @@ def check(a,b):
         return a
 #print(*check(a,b))#gives error
 print(check(a,b))
-'''
-'''
+
 #Yield vs return
 def mygen():
     #return "java"
@@ -56,7 +55,7 @@ def mygen():
     yield "python"
     yield "dsa"
 print(*mygen())# unpacks the generator object
-'''
+
 #next() in yield
 def mygen():
     yield "java"

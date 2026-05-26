@@ -14,9 +14,10 @@ def check2():
     print("inside value is",a)
 check2()
 print("outside value is ",a)
+
 '''
 #both global and local
-'''
+
 a=4;b=6
 def check3():
     a=5
@@ -29,7 +30,7 @@ def check3():
 check3()
 print("a value is ",a)
 print("b val is",b)
-
+'''
 #global keyword
 a=5
 def final():

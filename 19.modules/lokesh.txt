@@ -1,0 +1,5 @@
+Python language
+codegnan it solutions 
+this is lokesh and im trying to give n lines of data
+this is lokesh and im trying to give n lines of data one by one 
+and im not sure if it works let me try

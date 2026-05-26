@@ -2,41 +2,44 @@
 #print, input, len, typr, range, min, max, sum
 #fromkeys is a built in function only used for dictionary
 #fromkeys convert single string into dictionary formate
+'''
 a="codegnan"
-'''print(a)
+print(a)
 print(list(a))
 print(tuple(a))
 print(set(a))
-print(dic(a))#error'''
+#print(dict(a))#error
 
 
-'''b = dict.fromkeys(a)
+b = dict.fromkeys(a)
 print(b)
 b= dict.fromkeys(a, "veerendra")
 print(b)
 b['c']= "python"
-print(b)'''
-
+print(b)
+'''
 #eval() eval is a builtin datatype
 '''while True:
     a= int(input("a value"))
     b = int(input(" b value"))
-    print(a+b)'''
-
-
-'''while True:
+    print(a+b)
+'''
+'''
+while True:
     a= float(input("a value"))
     b = float(input(" b value"))
-    print(a+b)'''
-    
-'''while True:
+    print(a+b)
+'''
+'''
+while True:
     a = eval(input("data1"))
     b = eval(input("data2"))
-    print(a+b)'''
+    print(a+b)
+'''
 #zip()->we can combine multiple collections into one collection
 #zip is a builtin function
 #we have to use a datatype when using a bultin function
-'''a= [10,20,30, 40,50]
+a= [10,20,30, 40,50]
 names= ["apple","bannana","Mango"]
 print(a+names)
 
@@ -50,11 +53,11 @@ b= set(zip(a, names))
 print(b)
 
 b= dict(zip(a, names))
-print(b)'''
+print(b)
 
 #enumerate ()->we can give conter to the collection
 #it is a bultin function
-'''names =["geethe","latha", "kalyan","Nani"]
+names =["geethe","latha", "kalyan","Nani"]
 for i in range(len(names)):
     print(i,names[i])
 b= list(enumerate(names))
@@ -67,29 +70,29 @@ b = dict(enumerate(names))
 print(b)
 
 b = list(enumerate(names))
-print(b)'''
-
+print(b)
+'''
 #ASCII
 #chr(),ord()
 
-'''chr(56)
-'8'
-chr(90)
-'Z'
-chr(65)
-'A'
-ord("a")
-97
-'''
-'''for i in range( ord("a"),ord("z")):
+print(chr(56),'char')
+
+print(chr(90),'char')
+
+print(chr(65))
+print(ord("a"))
+
+
+for i in range( ord("a"),ord("z")):
     print(i)
 
 for i in range( ord("A"),ord("Z")):
-    print(i)'''
+    print(i)
 #task 1
-'''for i in range((input())):
-    print(ord(i),end =" ")'''
+for i in ((input())):
+    print(ord(i),end =" ")
 #task 2
-'''a = input()
+a = input()
 for i in a:
-    print(i ,"=",ord(i),end=" ")'''
+    print(i ,"=",ord(i),end=" ")
+'''
