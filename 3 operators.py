@@ -226,7 +226,7 @@ if 11 in a:
 >>> b=6
 >>> a^b
 2
->>> ``` xor 00=0 11=0 10=1 01=1 '''
+>>> ''' xor 00=0 11=0 10=1 01=1 '''
 SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
 >>> a,b=8,9
 >>> a^b
