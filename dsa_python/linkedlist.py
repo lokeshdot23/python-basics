@@ -237,3 +237,85 @@ while temp:
     temp=temp.next
 print("None")
 '''
+''' positional insertion in sll'''
+'''
+class node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+
+n=int(input("enter no of nodes"))
+head=None
+tail=None
+for i in range(n):
+    data=int(input("enter a value"))
+    newnode=node(data)
+    if head==None:
+        head=newnode
+        tail=newnode
+    else:
+        tail.next=newnode
+        tail=newnode
+print("Single linked list")
+
+temp=head
+while temp:
+    print(temp.data,end='->')
+    temp=temp.next
+print("None")
+#code for insertion in the middle
+data=int(input("enter value to be inserted"))
+pos=int(input("enter at what position we need to insert"))
+newnode=node(data)
+if pos ==0:
+    newnode.next=head
+    head=newnode
+else:
+    current=head
+    for _ in range(pos-1):
+        current=current.next
+    newnode.next=current.next
+    current.next=newnode
+current=head
+while current:
+    print(current.data,end='->')
+    current=current.next
+print("None")
+'''
+#delete at position
+class node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+
+n=int(input("enter no of nodes"))
+head=None
+tail=None
+for i in range(n):
+    data=int(input("enter a value"))
+    newnode=node(data)
+    if head==None:
+        head=newnode
+        tail=newnode
+    else:
+        tail.next=newnode
+        tail=newnode
+print("Single linked list")
+pos=int(input("enter a pos to delete at"))
+if head is None:
+    pass
+elif pos==0:
+    head=head.next
+else:
+    current=head
+    for _ in range(pos-1):
+        if current.next is None:
+            break
+        current=current.next
+    if current.next:
+        current.next=current.next.next
+curr=head
+while curr:
+    print(curr.data,end='->')
+    curr=curr.next
+print('None')

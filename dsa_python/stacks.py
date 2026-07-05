@@ -130,6 +130,7 @@ print("Binary",end="")
 while stack:
     print(stack.pop(),end=' ')
 '''
+'''
 #n = int(input("Enter number of elements:"))
 nums = list(map(int,input("Enter elements:" ).split()))
 stack = []
@@ -138,3 +139,140 @@ for num in nums:
         stack.pop()
     stack.append(num)
 print(stack)
+'''
+#Stack condition whether it's empty or full
+'''stack=[]
+n=int(input('enter the size of the stack'))
+for i in range(n):
+    v=int(input('enter the value'))
+    stack.append(v)
+stack.append(11)
+stack.append(22)
+stack.append(33)
+print(*stack)
+print('removed',stack.pop())
+print('peak',stack[-1])
+print('size',len(stack))'''
+
+'''Max= int(input("Enter stack size: "))
+stack=[]
+n= int(input("Enter number of elements: "))
+for i in range(n):
+    if len(stack)<Max:
+        stack.append(int(input()))
+    else:
+        print("stack overflow")
+        break
+print("Stack:", stack)
+if len(stack)==0:
+    print("Stack is Empty ...")
+else:
+    print("Stack is not Empty.")
+
+if len(stack)==Max:
+    print("Stack is Full")
+else:
+    print("Stack is not full")'''
+#Implementations of stack
+
+'''
+1. Monotonic stack
+2. Increasing
+3. Decreasing
+4. Valid paranthesis
+ i. Check balanced
+ ii. Balance the unbalanced
+ iii. Delete the balanced
+
+Increasing monotonic stack
+
+bottom -> 3 1 4 2 6 8 ->top
+[]->push 3
+[3]->push 1? is 3 smaller than 1 false -> pop()
+[]
+[1] -> push 1
+[1]->push 4 > is 4 greater than 1 true ->push 4
+[1,4] -> push 2? is 2 greater than 4 -> pop 4
+[1] -> push 1
+[1,2] -> 2 -> 6
+[1,2,6] 6>2 T
+[1,2,6,8] 8>6 T
+
+i/p: 3 1 4 2 6 8
+o/p: 1 2 6 8
+'''
+
+#Increasing monotonic stack
+'''stack = []
+nums = list(map(int,input("Enter values: ").split()))
+for x in nums:
+    while stack and stack[-1]>x:
+        stack.pop()
+    stack.append(x)
+print(stack)'''
+
+#Decreasing monotonic stack
+'''stack = []
+nums = list(map(int,input("Enter values: ").split()))
+for x in nums:
+    while stack and stack[-1]<x:
+        stack.pop()
+    stack.append(x)
+print(stack)'''
+
+#Bitonic stack
+'''stack = []
+nums = list(map(int,input("Enter values: ").split()))
+for i in range(0,len(nums),2):
+    print(nums[i],end=' ')
+for i in range(1,len(nums),2):
+    stack.append(nums[i])
+while stack:
+    print(stack.pop(),end=' ')
+
+#Balanced paranthesis or not
+s = input("Enter expression: ")
+stack = []
+pairs = {')':'(',']':'[','}':'{'}
+balanced = True
+for ch in s:
+    if ch in '([{':
+        stack.append(ch)
+    elif ch in ')]}':
+        if not stack or stack[-1]!=pairs[ch]:
+            balanced = False
+            break
+        stack.pop()
+if stack:
+    balanced = False
+if balanced:
+    print(s,"is balanced")
+else:
+    print(s,"is not balanced")
+'''
+'''
+s = input("Enter expression: ")
+stack = []
+pairs = {')': '(', ']': '[', '}': '{'}
+rev_pairs = {'(': ')', '[': ']', '{': '}'}
+result = []
+
+for ch in s:
+    if ch in '([{':
+        stack.append(ch)
+        result.append(ch)
+    elif ch in ')]}':
+        if stack and stack[-1] == pairs[ch]:
+            stack.pop()
+            result.append(ch)
+        else:
+            result.append(pairs[ch])
+            result.append(ch)
+    else:
+        result.append(ch)
+while stack:
+    open_bracket = stack.pop()
+    result.append(rev_pairs[open_bracket])
+
+print("Balanced:", "".join(result))
+'''
